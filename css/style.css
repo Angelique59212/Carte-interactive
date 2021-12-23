@@ -1,3 +1,48 @@
-div p {
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
 
+body {
+    background-image: url("../eiffel2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 50%;
+    padding: 1rem;
+    background-color: white;
+}
+
+div p {
+    font-size: 1.5rem;
+}
+
+div {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+        background-image: url("../tour-eiffel.jpg");
+        background-size: cover;
+        background-position: -30vw;
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        padding: 0;
+        width: 100%;
+    }
 }
